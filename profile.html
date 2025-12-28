@@ -20,6 +20,465 @@
 <link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Comic+Relief:wght@400;700&family=DynaPuff:wght@400..700&family=Lobster&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 @import url('https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Comic+Relief:wght@400;700&family=DynaPuff:wght@400..700&family=Lobster&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playwrite+US+Modern:wght@100..400&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
 </head>
+</head>
+<style>
+    :root{
+   --text-color: black;
+   --link-color: blue;
+   ;
+}
+body{
+    background:rgb(25, 25, 66);
+    color:rgb(177, 177, 215);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+scroll-behavior: smooth;
+}
+
+a{
+    color: var(--link-color);
+    text-decoration: none;
+    
+}
+nav{
+    display: flex;
+    justify-content: space-between ;
+    padding: 0 50px;
+    align-items: center;
+    height: 90px;
+    background-color: rgb(51, 51, 117);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+nav .left p{
+    color:rgb(144, 180, 251);
+    font-size: 50px;
+    font-weight: 400;
+    font-family: "Lobster", sans-serif;
+    font-style:normal;
+}
+nav .right a{
+    color:rgb(144, 180, 251);
+    font-size: 25px;
+    font-weight: 550;
+    margin:0 15px;
+}
+nav .right a:hover{
+    color: #688eff;
+    transition: all 0.3s ease;
+    transform: scale(1.1);
+    text-shadow: 5px 5px 15px rgba(73, 62, 224, 0.7);
+
+}
+#last{
+    color: rgb(144, 180, 251);
+    background-color: var(--text-color);
+    padding: 7px 15px;
+    border-radius: 8px;
+}
+nav .right a span{
+    margin-left: 5px;
+}
+/*-Section 1: Headshot stuff-*/
+.myself{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+    margin: 50px 0;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 100px;
+}
+.myself .text{
+    flex: 5;
+     text-shadow: 4px 6px 6px rgb(0, 0, 0);
+}
+.myself .text h2{
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    font-family:initial;
+    color:#cbd8ff;
+    text-shadow: 5px 7px 8px rgb(0, 0, 0);
+}
+.myself .text #content{
+    font-size: 20px;
+    font-weight: 600;
+
+}
+.myself .text .links{
+    margin-top: 25px;
+
+}
+.myself .text .links a{
+    display: inline-block;
+    padding: 5px 10px;
+    border:2px solid rgb(234, 35, 141);
+    border-radius: 10px;
+    margin-right: 10px;
+    
+}
+.myself .text .links a:hover{
+    color:pink;
+    border:2px solid rgb(251, 104, 158);
+    background-color: pink;
+    transition: all 0.4s ease;
+     transform:scale(1.1);
+    box-shadow:8px 8px 20px rgba(255,20,147,0.8);
+}
+.myself .text a i{
+    color: rgb(234, 35, 141);
+
+}
+.myself .text a span{
+    color: rgb(234, 35, 141);
+}
+
+.myself .picture{
+    flex: 2;
+    display: flex;
+    justify-content: right;
+}
+.myself .picture img{
+    border-radius: 50%;
+    width:300px;
+    height:300px;
+    object-fit: cover;
+    transition: 0.3s ease-in-out; 
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);  
+
+}
+.myself .picture img:hover{
+transform: scale(1.1); 
+    box-shadow: 5px 6px 13px #25287c, 15px 15px 40px #21101c
+}
+/*-Section 2 Skills*/
+.skills-section{
+    align-items: center; 
+    padding: 0 50px;
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
+.skills-section h2{
+    text-align: center;
+font-size: 35px;
+color:#cbd8ff;
+    text-shadow: 5px 7px 8px rgb(0, 0, 0);
+    margin-bottom: 30px;
+}
+.skills-section .text{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 21px;
+    font-weight: 600;
+     text-shadow: 4px 6px 6px rgb(0, 0, 0);
+}
+.skills-section .cells{
+    display: inline-block;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+.skills-section .cells .cell{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    padding:15px 25px;
+    border: 2px solid rgb(74, 72, 72);
+    border-radius: 13px;
+    margin-right: 40px;
+    margin-bottom: 15px;
+    background-color: azure;
+    gap: 10px;
+    border-width:3.5px;
+}
+#html1{
+    margin-left:239px;
+    border-color: rgb(172, 23, 23);
+    background-color: transparent;
+}
+#css1{
+    border-color: rgb(7, 70, 152);
+    background-color: transparent;
+}
+#java1{
+    border-color: rgb(255, 215, 12);
+    background-color: transparent;
+}
+#node1{
+    border-color: rgb(212, 114, 10);
+    background-color: transparent;
+}
+#react1{
+    border-color: rgb(54, 220, 246);
+    background-color: transparent;
+}
+#html {
+    color:rgb(172, 23, 23);
+    font-size: 30px;
+    transition: all 0.4s ease;
+     transform:scale(1.1);
+    text-shadow:8px 8px 6px rgb(0, 0, 0);
+}
+#css {
+    color:rgb(7, 70, 152);
+    font-size: 30px;
+    transition: all 0.4s ease;
+     transform:scale(1.1);  
+    text-shadow:8px 8px 6px rgb(0, 0, 0);
+
+}
+#java {
+    color:rgb(255, 215, 12);
+    font-size: 30px;
+    transition: all 0.4s ease;
+     transform:scale(1.1);
+    text-shadow:8px 8px 6px rgb(0, 0, 0);
+}
+#node {
+    color:rgb(212, 114, 10);
+    font-size: 30px;
+    transition: all 0.4s ease;
+     transform:scale(1.1);
+    text-shadow:8px 8px 6px rgb(0, 0, 0);
+}
+#react {
+    color:rgb(54, 220, 246);
+    font-size: 30px;
+    transition: all 0.4s ease;
+     transform:scale(1.1);
+    text-shadow:8px 8px 6px rgb(0, 0, 0);
+    transition: text-shadow 0.3s ease;
+}
+
+.skills-section .cells .cell span{
+    font-size: larger;
+    font-weight: 650;
+}
+.skills-section .cells .cell span:hover{
+    cursor: pointer;
+    transition: all 0.3s ease;
+     transform:scale(1.1);
+    text-shadow:8px 8px 10px rgb(0, 0, 0);
+}
+.skills-section .cells .cell:hover{
+    cursor: pointer;
+    transition: all 0.4s ease;
+     transform:scale(1.1);
+    text-shadow:8px 8px 20px rgb(0, 0, 0);
+}
+
+.skills-section .cells #html1:hover{
+    background-color: rgb(220, 127, 127);
+     transition:all 0.4s ease;
+     transform:scale(1.1);
+    box-shadow:8px 8px 20px rgba(255,0,0,0.8);
+}
+.skills-section .cells #css1:hover{
+    background-color: rgb(135, 180, 255);
+    transition:all 0.4s ease;
+    transform:scale(1.1);
+    box-shadow:8px 8px 20px rgba(0,0,255,0.8);
+}
+.skills-section .cells  #java1:hover{
+    background-color: rgb(255, 240, 180);
+    transition:all 0.4s ease;
+    transform:scale(1.1);
+    box-shadow:8px 8px 20px rgba(255,255,0,0.8);
+}
+.skills-section .cells #node1:hover{
+    background-color: rgb(255, 200, 180);
+    transition:all 0.4s ease;
+    transform:scale(1.1); 
+    box-shadow:8px 8px 20px rgba(255,165,0,0.8);
+}
+.skills-section .cells #react1:hover{
+    background-color: rgb(180, 240, 255);
+    transition:all 0.4s ease;
+    transform:scale(1.1);   
+    box-shadow:8px 8px 20px rgba(0,255,255,0.8);
+}
+/*-Section 3 Testimony*/
+.testimony-section{
+    padding: 0 50px;
+    margin-bottom: 100px;
+}
+.testimony-section h2{
+    font-size: 35px;
+    margin-bottom: 30px;
+    color:#cbd8ff;
+    text-shadow: 5px 7px 8px rgb(0, 0, 0);
+}
+.testimony-section .group{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+.testimony-section .group .personal{
+    flex: 2;
+    text-align: center;
+    text-shadow: 5px 7px 8px rgb(0, 0, 0);
+}
+.testimony-section .group .text{
+    border-radius: 30px;
+   font-size: 22px;   
+    font-weight: bold;
+    margin-bottom: 15px;
+    flex:8;
+     text-shadow: 4px 6px 6px rgb(0, 0, 0);
+}
+
+
+.testimony-section .group .personal img{
+    width:250px;
+    height:250px;
+    border-radius: 50%;
+    margin-bottom: 18px;
+    object-fit: cover;
+    transition: 0.3s ease-in-out;   
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+
+}
+.testimony-section .group .personal img:hover{
+    transform: scale(1.05);
+    box-shadow: 10px 10px 20px #555, 15px 15px 40px #555; 
+}
+.testimony-section .group .personal p{
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.contact-section{
+    padding: 0 50px;
+    margin-bottom: 100px;
+}
+.contact-section h2{
+    font-size: 35px;
+    margin-bottom: 30px;
+    color:#cbd8ff;
+    text-shadow: 5px 7px 8px rgb(0, 0, 0);
+}
+.contact-section .group{
+    display: flex;
+    gap: 50px;
+    
+}
+.contact-section .group .text{
+    flex: 3;
+    font-size: 21px;
+    font-weight: 600;
+    margin-top: 10px;
+     text-shadow: 4px 6px 6px rgb(0, 0, 0);
+}
+.contact-section .group form{
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+}
+.contact-section .group form label{
+    font-size: 25px;
+    font-weight: 600;
+   font-family: Poppins;
+   text-shadow: 4px 6px 6px rgb(0, 0, 0);
+}
+.contact-section .group form input, .contact-section .group form textarea{
+   font-family: Poppins;
+   background-color: transparent;
+   padding: 10px;
+   margin-bottom: 15px;
+   border: 3.5px  solid rgb(15, 13, 13);
+   resize: none;
+   border-radius: 20px;
+   height: 60px;
+}
+input::placeholder, textarea::placeholder {
+    font-size: 18px; 
+    color: #b2b0b0;      
+  }
+.contact-section .group form button{
+    width: 150px;
+    padding: 10px;
+    display: flex;
+    border: rgb(230, 0, 100);
+    background-color: rgb(243, 68, 161);
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 20px;
+    cursor: pointer;
+    
+}
+.contact-section .group form button:hover{
+    background-color: rgb(255, 105, 180);
+    transition: all 0.3s ease;
+    transform: scale(1.05);
+    box-shadow: 5px 5px 15px rgba(255,20,147,0.7);
+    text-shadow: 4px 6px 15px rgb(0, 0, 0);
+}
+@media (max-width:850px){
+    /*-Section 1 Myself-*/
+    .myself .text h2{
+        font-size: 35;
+    }
+}
+    @media (max-width:740px){
+    /*-Section 1 Myself-*/
+    .myself{
+        
+        flex-direction: column-reverse;
+    }
+    .testimony-section{
+        text-align: center;
+    }
+    .testimony-section .group{
+        flex-direction: column;
+}
+.contact-section .group{
+    flex-direction: column;
+}
+}
+@media (max-width:600px){
+    nav{
+        padding: 0 20;
+    }
+    nav .right a{
+        font-size: 22px;
+    }
+    #last{
+        color: var(--text-color);
+        padding:0;
+        background-color: transparent;
+    }
+    nav .right a span{
+        display: none;
+    }
+    .myself{
+        padding: 0 20px;
+    }
+.myself  .text h2{
+    font-size: 30px;
+}
+.skills-section{
+    padding: 0 20px;
+}
+.skills-section .cells .cell span{
+    font-size: 16px;
+}
+.testimony-section{
+    padding: 0 20px;
+}
+.contact-section{
+    padding: 0 20px;
+}
+}
+</style>
 <body>
      <!--NAV BAR-->
       <nav>
